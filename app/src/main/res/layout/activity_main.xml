@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/white"
+    android:background="#ccddff"
+
 
     >
 
@@ -15,7 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Calcolatrice"
-        android:textSize="35dp"
+        android:textSize="35dip"
+
         android:textStyle="bold"
         android:gravity="center"
 
@@ -30,12 +32,18 @@
         android:layout_below="@+id/title"/>
 
 
-<Button
-    android:id="@+id/button1"
-    android:layout_height="30pt"
-    android:layout_width="70pt"
-    android:layout_below="@+id/spazio1"
-    />
+    <Button
+        android:id="@+id/button1"
+        android:layout_height="30pt"
+        android:layout_width="70pt"
+        android:gravity="center"
+        android:text="+5"
+        android:textSize="35sp"
+
+        android:layout_below="@+id/spazio1"
+        android:includeFontPadding="false"
+        android:backgroundTint="@color/Pulsanti"
+        />
 
 
     <Button
@@ -44,18 +52,28 @@
         android:layout_width="70pt"
         android:gravity="center"
         android:text="-5"
-        android:textSize="35sp"
+        android:textSize="35dip"
+
         android:layout_height="30pt"
         android:layout_below="@+id/spazio1"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentRight="true"
+        android:includeFontPadding="false"
+        android:backgroundTint="@color/Pulsanti"
+        />
 
     <Button
 
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="30pt"
+
+        android:text="+"
+        android:textSize="35dip"
+
         android:layout_below="@+id/button1"
         android:layout_marginTop="25pt"
+        android:includeFontPadding="false"
+        android:backgroundTint="@color/Pulsanti"
          />
 
     <Button
@@ -63,27 +81,43 @@
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="30pt"
+        android:gravity="center"
+        android:text="-"
+        android:textSize="35dip"
+        android:includeFontPadding="false"
         android:layout_below="@+id/button3"
         android:layout_marginTop="25pt"
+
+        android:backgroundTint="@color/Pulsanti"
         />
 
-    <Button
+    <TextView
 
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="30pt"
         android:layout_below="@+id/button4"
         android:layout_marginTop="25pt"
+        android:includeFontPadding="false"
         android:background="@color/white"
+        android:gravity="center"
+
+
         />
     <Button
 
         android:id="@+id/reset"
         android:layout_width="match_parent"
         android:layout_height="30pt"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/reset"
+        android:textSize="35dip"
         android:layout_below="@+id/button5"
         android:layout_marginTop="25pt"
-        android:background="@color/white"
+        android:textAllCaps="false"
+
+        android:backgroundTint="@color/VerdeReset"
         />
 
 
