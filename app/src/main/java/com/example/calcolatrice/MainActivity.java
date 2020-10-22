@@ -17,8 +17,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
 
         super.onStop();
-        TextView center = findViewById(R.id.centertext);
+
+        /*TextView center = findViewById(R.id.centertext);
         center.setText("Test Bello");
+        */
+
     }
 
 }
